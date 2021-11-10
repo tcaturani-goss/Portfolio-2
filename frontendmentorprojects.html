@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Teano Goss Portfolio</title>
+    <link rel="stylesheet" href="styleFEM.css" />
+  </head>
+  <header>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <img src="logoimg.png" alt="Logo" class="mobilelogo" />
+      <div class="menu-icon" onclick="menutoggle()">
+        <input type="checkbox" id="toggle" class="toggle" />
+        <label for="toggle" class="toggle" onclick="menutoggle()"></label>
+      </div>
+    </div>
+    <div class="largescreentopnav">
+      <div class="largescreenlogo">
+        <a href="index.html"
+          ><img src="logoimg.png" alt="Logo" class="largescreenlogo"
+        /></a>
+      </div>
+      <div id="myLinks" class="menulinks">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="Resume Mockup 2.pdf">Resume</a>
+      </div>
+    </div>
+  </header>
+  <body></body>
+  <footer>
+    <div class="footerlogo">
+      <img src="logoimg.png" class="logoimg" alt="logo" />
+    </div>
+    <div class="emailtitle">
+      <p>Let Us Create Inspiration Together!</p>
+    </div>
+    <div class="emaillink">
+      <a href="mailto:skylor.goss@gmail.com">skylor.goss@gmail.com</a>
+    </div>
+    <div class="footernavlinks">
+      <a class="footerlink1" href="index.html">Home</a>
+      <a class="footerlink1" href="aboutme.html">About</a>
+      <a class="footerlink1" href="Teano Goss - Frontend Developer Resume.pdf"
+        >Resume</a
+      >
+    </div>
+    <div id="quotedisplay" class="quotedisplay"></div>
+    <div class="medialinks">
+      <ul class="sci">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/teano-caturani-goss-494bb3174/"
+            target="_blank"
+            ><img src="linkedin.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/skylorgoss9363" target="_blank"
+            ><img src="behance.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/tcaturani-goss" target="_blank"
+            ><img src="github.png"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <h5>© Teano Goss 2021</h5>
+    </div>
+  </footer>
+  <script>
+    var quotes = [
+      '"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." <br> — Helen Keller',
+      '"Don\'t judge each day by the harvest you reap but by the seeds that you plant." <br> — Robert Louis Stevenson',
+      '"Success is not final, failure is not fatal: it is the courage to continue that counts." <br> — Winston Churchill',
+      '"You are never too old to set another goal or to dream a new dream." <br> — Malala Yousafzai',
+      '"For me, becoming isnt about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn’t end." <br> — Michelle Obama',
+      '"Spread love everywhere you go." <br> — Mother Teresa',
+      '"You don\’t always need a plan. Sometimes you just need to breathe, trust, let go and see what happens." <br> — Mandy Hale',
+      '"Silence is the last thing the world will ever hear from me." <br> — Marlee Matlin',
+      '"All you need is the plan, the road map, and the courage to press on to your destination." <br> — Earl Nightingale',
+      '"If you have good thoughts they will shine out of your face like sunbeams and you will always look lovely." <br> — Roald Dahl',
+    ];
+
+    window.onload = function newQuote() {
+      var randomNumber = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quotedisplay").innerHTML = quotes[randomNumber];
+    };
+    function menutoggle() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</html>

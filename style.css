@@ -80,7 +80,9 @@ footer {
   font-weight: 500;
   font-size: 1.0625rem;
 }
+
 .footernavlinks {
+  color: #fff;
   font-family: "Nunito Sans", sans-serif;
   margin-right: 0.125em;
   margin-top: 3em;
@@ -89,6 +91,9 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.footernavlinks a {
+  color: #fff;
 }
 .quotedisplay {
   color: #ffffff;
@@ -455,8 +460,8 @@ p {
     line-height: 0rem;
   }
   .menulinks a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #6c8fad;
+    font-weight: 600;
   }
   .active {
     background-color: #04aa6d;
@@ -597,6 +602,12 @@ p {
     font-family: "Nunito Sans", sans-serif;
     margin-left: 33.875em;
     font-size: 1.0625rem;
+  }
+  .emaillink a {
+    color: #fff;
+  }
+  .emaillink a:hover {
+    color: blue;
   }
   .sci {
     height: 0.625em;

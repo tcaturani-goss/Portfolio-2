@@ -110,6 +110,9 @@ footer {
   flex-direction: column;
   text-align: center;
 }
+.footernavlinks a {
+  color: #fff;
+}
 .quotedisplay {
   color: #ffffff;
   margin: 1rem;
@@ -368,6 +371,12 @@ input {
     font-family: "Nunito Sans", sans-serif;
     margin-left: 36rem;
     font-size: 1.0625rem;
+  }
+  .emaillink a {
+    color: #fff;
+  }
+  .emaillink a:hover {
+    color: blue;
   }
   .sci {
     height: 10px;

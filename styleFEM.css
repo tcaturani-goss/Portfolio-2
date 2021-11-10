@@ -249,7 +249,7 @@ input {
     height: 0rem;
   }
   .menulinks a {
-    color: black;
+    color: #6c8fad;
     text-decoration: none;
     font-size: 18px;
     display: flex;
@@ -333,7 +333,7 @@ input {
     height: 0rem;
   }
   .menulinks a {
-    color: black;
+    color: #6c8fad;
     text-decoration: none;
     font-size: 18px;
     display: flex;
@@ -343,8 +343,7 @@ input {
     line-height: 0rem;
   }
   .menulinks a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #dd6d33;
   }
   .active {
     background-color: #04aa6d;

@@ -342,8 +342,9 @@ p {
     width: 0em;
     height: 0em;
   }
+
   .menulinks a {
-    color: black;
+    color: #6c8fad;
     text-decoration: none;
     font-size: 1.125rem;
     display: flex;
@@ -450,7 +451,7 @@ p {
     height: 0em;
   }
   .menulinks a {
-    color: black;
+    color: #6c8fad;
     text-decoration: none;
     font-size: 1.125rem;
     display: flex;
@@ -460,8 +461,7 @@ p {
     line-height: 0rem;
   }
   .menulinks a:hover {
-    color: #6c8fad;
-    font-weight: 600;
+    color: #dd6d33;
   }
   .active {
     background-color: #04aa6d;

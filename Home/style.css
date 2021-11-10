@@ -1,0 +1,608 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #eeefea;
+}
+/* Top Navigation */
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  height: 7em;
+  width: 80%;
+  padding: 0em 1.5em 0em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobilelogo {
+  width: 7em;
+  height: 5em;
+}
+
+.largescreenlogo {
+  display: none;
+}
+
+.menulinks {
+  position: absolute;
+  background-color: #191921;
+  text-align: center;
+  margin-left: 10em;
+  width: 13em;
+  height: 13.5em;
+  z-index: 2;
+}
+
+.menulinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: block;
+  padding: 1em 0em 0em 0em;
+  line-height: 3rem;
+}
+
+.menulinks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* End of Top Navigation */
+
+a {
+  text-decoration: none;
+  padding: 0.3125em;
+}
+
+footer {
+  background-color: #2e2e2e;
+  height: 55em;
+}
+.footerlogo {
+  padding-top: 8.5em;
+  margin-left: 7.8125em;
+}
+.emailtitle {
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.emaillink {
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 6.5em;
+  font-weight: 500;
+  font-size: 1.0625rem;
+}
+.footernavlinks {
+  font-family: "Nunito Sans", sans-serif;
+  margin-right: 0.125em;
+  margin-top: 3em;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.quotedisplay {
+  color: #ffffff;
+  margin: 1em;
+  margin-top: 5em;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+}
+.sci {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.625em;
+  margin-left: 2em;
+}
+.sci li {
+  margin-right: 0.9375em;
+  list-style: none;
+}
+.sci li img {
+  transform: scale(0.5);
+  opacity: 0.7;
+}
+.sci li img:hover {
+  transform: scale(1);
+}
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 9rem;
+}
+/*Hamburger Menu and Animations*/
+:root {
+  --animation-curve: cubic-bezier(1, 0, 0, 1);
+}
+.menu-icon {
+  margin-right: 0.5em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+label {
+  width: 2rem;
+  height: 0.3125rem;
+  background-color: black;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+}
+
+label::before,
+label::after {
+  content: "";
+  width: 2rem;
+  height: 0.3125rem;
+  background-color: black;
+  position: absolute;
+  display: block;
+  transition: all 0.3s var(--animation-curve);
+}
+
+label::before {
+  top: 0.6rem;
+  left: 0%;
+  transform-origin: left top;
+  transform: rotateZ(0deg);
+}
+
+label::after {
+  bottom: 0.6rem;
+  left: 0%;
+  transform-origin: left bottom;
+}
+
+#toggle:checked ~ label::before {
+  background-color: black;
+  transform: rotate(-37deg);
+}
+
+#toggle:checked ~ label::after {
+  background-color: black;
+  transform: rotate(37deg);
+}
+
+#toggle:checked ~ label {
+  background-color: #eeefea;
+}
+
+#toggle:checked ~ nav {
+  left: 45rem;
+}
+
+#toggle ~ label {
+  transition: all 0.3s var(--animation-curve);
+}
+
+input {
+  display: none;
+}
+/* End of Hamburger Animation*/
+
+/* main styles */
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  font-size: 2.9375rem;
+}
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.tiles img {
+  width: 20rem;
+}
+.tilestext {
+  padding: 0rem 2rem 0rem 2rem;
+}
+.tiles {
+  width: 20rem;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 23rem;
+  left: 12.5rem;
+  margin-bottom: 3rem;
+  transform: translate(-50%, -50%);
+}
+.tiles .tile {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: 0.99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+.tiles .tile:before {
+  content: "";
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+}
+.tiles .tile img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.tiles .tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.tiles .tile .details span {
+  display: block;
+
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+.tiles .tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+.tiles .tile .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.tiles .tile:focus:before,
+.tiles .tile:hover:before,
+.tiles .tile:focus span,
+.tiles .tile:hover span {
+  opacity: 1;
+}
+.tiles .tile:focus:before,
+.tiles .tile:hover:before {
+  top: 50%;
+}
+.tiles .tile:focus span,
+.tiles .tile:hover span {
+  top: 0;
+}
+.tiles .tile:focus .title,
+.tiles .tile:hover .title {
+  transition-delay: 0.15s;
+}
+.tiles .tile:focus .info,
+.tiles .tile:hover .info {
+  transition-delay: 0.25s;
+}
+
+/* Start of Media Queries */
+@media only screen and (min-width: 768px) {
+  /*Top Navigation*/
+  .topnav {
+    display: none;
+  }
+  .largescreentopnav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    height: 3em;
+    width: 100%;
+    padding: 0 0em;
+  }
+  .largescreenlogo {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 0em 0em 1em;
+    margin: 0em 0em 0em 0em;
+    width: 11em;
+    height: 7em;
+  }
+
+  .menulinks {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-left: 18em;
+    margin-top: 3.3125em;
+    width: 0em;
+    height: 0em;
+  }
+  .menulinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0em;
+    padding: 0em 0.5em 0em 1em;
+    line-height: 0rem;
+  }
+  .menulinks a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  /* End of Top Navigation */
+  h2 {
+    font-size: 3rem;
+  }
+  .tiles img {
+    width: 30rem;
+  }
+  .tilestext {
+    position: relative;
+    top: 12rem;
+    padding: 0em 2rem 0rem 6rem;
+  }
+  .tiles {
+    width: 480px;
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 50rem;
+    left: 24rem;
+    margin-bottom: 20rem;
+    transform: translate(-50%, -50%);
+  }
+  footer {
+    height: 73em;
+  }
+  .footerlogo {
+    padding-top: 8.5em;
+    margin-left: 18.7em;
+  }
+  .emailtitle {
+    margin-left: 1em;
+  }
+  .emaillink {
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 16.5em;
+    font-weight: 500;
+    font-size: 1.0625rem;
+  }
+  .sci {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.625em;
+    margin-left: 13em;
+  }
+  .copyright {
+    margin-top: 10em;
+  }
+  /* Hamburger Menu */
+  .menu-icon {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /*Top Navigation*/
+  .topnav {
+    display: none;
+  }
+  .largescreentopnav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    height: 11em;
+    width: 100%;
+    padding: 0 0em;
+  }
+  .largescreenlogo {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 9.5em 0em 3em;
+    margin: 0em 0em 0em 0em;
+  }
+  .menulinks {
+    background-color: violet !important;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-left: 47em;
+    margin-top: 3.2em;
+    width: 0em;
+    height: 0em;
+  }
+  .menulinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0em 0em 0em 3em;
+    padding: 0em 0.5em 0em 0em;
+    line-height: 0rem;
+  }
+  .menulinks a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  /* End of Top Navigation */
+
+  .logoimg {
+    margin-top: 1.6875em;
+  }
+
+  p {
+    margin-right: 1em;
+  }
+
+  .tilestext {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    padding: 0rem 40rem 0rem 5rem;
+  }
+
+  .tiles {
+    width: 500px;
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    left: 65rem;
+    margin-bottom: 0rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .tiles .tile {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    opacity: 0.99;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .tiles .tile:before {
+    content: "";
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+  }
+
+  .tiles .tile img {
+    display: block;
+    max-width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .tiles .tile .details {
+    font-size: 16px;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .tiles .tile .details span {
+    display: block;
+    opacity: 0;
+    position: relative;
+    top: 100px;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+  }
+
+  .tiles .tile .details .title {
+    line-height: 1;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .tiles .tile .details .info {
+    line-height: 1.2;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:hover:before,
+  .tiles .tile:focus span,
+  .tiles .tile:hover span {
+    opacity: 1;
+  }
+  .tiles .tile:focus:before,
+  .tiles .tile:hover:before {
+    top: 50%;
+  }
+  .tiles .tile:focus span,
+  .tiles .tile:hover span {
+    top: 0;
+  }
+  .tiles .tile:focus .title,
+  .tiles .tile:hover .title {
+    transition-delay: 0.15s;
+  }
+  .tiles .tile:focus .info,
+  .tiles .tile:hover .info {
+    transition-delay: 0.25s;
+  }
+  footer {
+    position: relative;
+    height: 50em;
+  }
+  .footerlogo {
+    padding-top: 9.5em;
+    margin-left: 37.1em;
+  }
+  .emailtitle {
+    margin-left: 3em;
+  }
+  .emaillink {
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 33.875em;
+    font-size: 1.0625rem;
+  }
+  .sci {
+    height: 0.625em;
+    margin-left: 31.25em;
+  }
+  .copyright {
+    margin-top: 7em;
+  }
+}

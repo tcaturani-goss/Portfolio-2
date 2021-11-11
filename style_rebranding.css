@@ -193,17 +193,21 @@ footer {
 }
 
 .emailtitle {
-  color: #ffffff;
+  color: #6c8fad;
   letter-spacing: 2px;
   text-align: center;
   font-size: 1.5rem;
 }
 
 .emaillink {
+  color: #6c8fad;
   font-family: "Nunito Sans", sans-serif;
   margin-left: 5.6rem;
   font-weight: 500;
   font-size: 1.0625rem;
+}
+.emaillink a {
+  color: #6c8fad;
 }
 
 .footernavlinks {
@@ -217,10 +221,10 @@ footer {
   text-align: center;
 }
 .footernavlinks a {
-  color: #fff;
+  color: #6c8fad;
 }
 .quotedisplay {
-  color: #ffffff;
+  color: #dd6d33;
   margin: 1rem;
   margin-top: 5rem;
   text-align: center;
@@ -247,7 +251,7 @@ footer {
   transform: scale(1);
 }
 .copyright {
-  color: #ffffff;
+  color: #6c8fad;
   text-align: center;
   margin-top: 100px;
 }
@@ -639,13 +643,13 @@ input {
     padding-top: 9.5em;
     margin-left: 37.1rem;
   }
+  .footernavlinks a:hover {
+    color: #dd6d33;
+  }
   .emaillink {
     font-family: "Nunito Sans", sans-serif;
     margin-left: 36rem;
     font-size: 1.0625rem;
-  }
-  .emaillink a {
-    color: #fff;
   }
   .emaillink a:hover {
     color: blue;

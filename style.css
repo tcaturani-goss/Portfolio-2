@@ -70,7 +70,7 @@ footer {
   margin-left: 7.8125em;
 }
 .emailtitle {
-  color: #ffffff;
+  color: #6c8fad;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -80,9 +80,11 @@ footer {
   font-weight: 500;
   font-size: 1.0625rem;
 }
-
+.emaillink a {
+  color: #6c8fad;
+}
 .footernavlinks {
-  color: #fff;
+  color: #6c8fad;
   font-family: "Nunito Sans", sans-serif;
   margin-right: 0.125em;
   margin-top: 3em;
@@ -93,10 +95,10 @@ footer {
   text-align: center;
 }
 .footernavlinks a {
-  color: #fff;
+  color: #6c8fad;
 }
 .quotedisplay {
-  color: #ffffff;
+  color: #dd6d33;
   margin: 1em;
   margin-top: 5em;
   text-align: center;
@@ -123,7 +125,7 @@ footer {
   transform: scale(1);
 }
 .copyright {
-  color: #ffffff;
+  color: #6c8fad;
   text-align: center;
   margin-top: 9rem;
 }
@@ -594,6 +596,9 @@ p {
   .footerlogo {
     padding-top: 9.5em;
     margin-left: 37.1em;
+  }
+  .footernavlinks a:hover {
+    color: #dd6d33;
   }
   .emailtitle {
     margin-left: 3em;

@@ -56,38 +56,39 @@ html {
 }
 /* End of Top Navigation */
 
-.aboutmeimg {
-  margin: 2rem 0rem 0rem 0.75rem;
-}
-.aboutmetext {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 h1 {
   font-family: "Nunito Sans", sans-serif;
-  margin-left: 6.3rem;
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 1.125rem;
+  margin: 20px 0px 8px 30px;
+  opacity: 0.5;
 }
 
-p {
+h2 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
-  margin: 1em;
+  font-size: 0.875rem;
+  margin: 0px 0px 0px 30px;
+  opacity: 0.5;
 }
 
 a {
   text-decoration: none;
-  padding: 5px;
+  padding: 0.3125em;
 }
-
+.ordersummaryimg {
+  width: 21.875em;
+  height: 16.375em;
+  margin: 2em 0em 2em 1em;
+  border-radius: 30px;
+}
 footer {
   background-color: #2e2e2e;
   height: 50em;
 }
 .footerlogo {
-  padding-top: 8.5rem;
-  margin-left: 6.5rem;
+  padding-top: 8.5em;
+  margin-left: 7.8125em;
 }
 .emailtitle {
   color: #ffffff;
@@ -96,10 +97,11 @@ footer {
 }
 .emaillink {
   font-family: "Nunito Sans", sans-serif;
-  margin-left: 5.6rem;
+  margin-left: 6.5em;
   font-weight: 500;
   font-size: 1.0625rem;
 }
+
 .footernavlinks {
   font-family: "Nunito Sans", sans-serif;
   margin-right: 2px;
@@ -127,7 +129,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 10px;
-  margin-left: 0.8rem;
+  margin-left: 2em;
 }
 .sci li {
   margin-right: 15px;
@@ -244,7 +246,7 @@ input {
     flex-direction: row;
     z-index: 1;
     padding-left: 18rem;
-    margin-top: 2rem;
+    margin-top: 3.3125em;
     width: 0rem;
     height: 0rem;
   }
@@ -272,9 +274,17 @@ input {
     font-family: "Nunito Sans", sans-serif;
     margin-left: 13rem;
   }
-
+  .ordersummaryimg {
+    width: 40.3125em;
+    height: 29.1875em;
+    margin: 8em 0em 2em 3em;
+    border-radius: 30px;
+  }
+  footer {
+    height: 74em;
+  }
   .footerlogo {
-    padding-top: 8.5em;
+    padding-top: 11em;
     margin-left: 18.7rem;
   }
   .emaillink {
@@ -292,7 +302,7 @@ input {
     margin-left: 13rem;
   }
   .copyright {
-    margin-top: 8rem;
+    margin-top: 10em;
   }
   /* Hamburger Menu */
   .menu-icon {
@@ -356,11 +366,66 @@ input {
   }
 
   h1 {
-    font-family: "Nunito Sans", sans-serif;
-    margin-left: 28rem;
+    margin: 1.25em 0em 0.5em 6.25em;
+  }
+
+  h2 {
+    margin: 0em 0em 0em 8em;
   }
   p {
     line-height: 1.5rem;
+  }
+  .ordersummaryimg {
+    width: 70em;
+    margin: 8em 0em 2em 7em;
+    border-radius: 30px;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .ordersummarycontainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .ordersummarycontainer a {
+    width: 50%;
+    height: 100%;
+  }
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .ordersummaryimg:hover {
+    opacity: 0.5;
+  }
+
+  .ordersummarylink:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    border-radius: 30px;
+    background-color: #6c8fad;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .projectdetails {
+    margin-bottom: 5rem;
+  }
+  footer {
+    height: 50em;
   }
   .footerlogo {
     padding-top: 9.5em;
@@ -380,5 +445,8 @@ input {
   .sci {
     height: 10px;
     margin-left: 31.25rem;
+  }
+  .copyright {
+    margin-top: 8em;
   }
 }

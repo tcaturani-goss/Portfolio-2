@@ -603,9 +603,6 @@ p {
     margin-left: 33.875em;
     font-size: 1.0625rem;
   }
-  .emaillink a {
-    color: #fff;
-  }
   .emaillink a:hover {
     color: blue;
   }

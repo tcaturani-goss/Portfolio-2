@@ -692,7 +692,7 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
-    top: 150px;
+    top: 100px;
     left: 95rem;
     margin-bottom: 0rem;
     transform: translate(-50%, -50%);

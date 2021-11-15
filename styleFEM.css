@@ -452,3 +452,196 @@ input {
     margin-top: 8em;
   }
 }
+@media only screen and (min-width: 1200px) {
+  /*Top Navigation*/
+  .topnav {
+    display: none;
+  }
+  .largescreentopnav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    height: 11em;
+    width: 100%;
+    padding: 0 0em;
+  }
+  .largescreenlogo {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 9.5em 0em 3em;
+    margin: 0em 0em 0em 0em;
+  }
+  .menulinks {
+    background-color: violet !important;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-left: 78.625em;
+    margin-top: 3.2em;
+    width: 0em;
+    height: 0em;
+  }
+  .menulinks a {
+    color: #6c8fad;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0em 0em 0em 3em;
+    padding: 0em 0.5em 0em 0em;
+    line-height: 0rem;
+  }
+  .menulinks a:hover {
+    color: #dd6d33;
+  }
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  /* End of Top Navigation */
+
+  .logoimg {
+    margin-top: 1.6875em;
+  }
+
+  .tilestext {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    padding: 0rem 40rem 0rem 5rem;
+  }
+
+  .tiles {
+    width: 500px;
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    left: 95rem;
+    margin-bottom: 0rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .tiles .tile {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    opacity: 0.99;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .tiles .tile:before {
+    content: "";
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+  }
+
+  .tiles .tile img {
+    display: block;
+    max-width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .tiles .tile .details {
+    font-size: 16px;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .tiles .tile .details span {
+    display: block;
+    opacity: 0;
+    position: relative;
+    top: 100px;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+  }
+
+  .tiles .tile .details .title {
+    line-height: 1;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .tiles .tile .details .info {
+    line-height: 1.2;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:hover:before,
+  .tiles .tile:focus span,
+  .tiles .tile:hover span {
+    opacity: 1;
+  }
+  .tiles .tile:focus:before,
+  .tiles .tile:hover:before {
+    top: 50%;
+  }
+  .tiles .tile:focus span,
+  .tiles .tile:hover span {
+    top: 0;
+  }
+  .tiles .tile:focus .title,
+  .tiles .tile:hover .title {
+    transition-delay: 0.15s;
+  }
+  .tiles .tile:focus .info,
+  .tiles .tile:hover .info {
+    transition-delay: 0.25s;
+  }
+  footer {
+    position: relative;
+    height: 60em;
+  }
+  .footerlogo {
+    padding-top: 9.5em;
+    margin-left: 54em;
+  }
+  .footernavlinks a:hover {
+    color: #dd6d33;
+  }
+  .emailtitle {
+    margin-left: 1em;
+  }
+  .emaillink {
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 50em;
+    font-size: 1.0625rem;
+  }
+  .emaillink a:hover {
+    color: blue;
+  }
+  .sci {
+    height: 0.625em;
+    margin-left: 48.5625em;
+  }
+  .copyright {
+    margin-top: 7em;
+  }
+}

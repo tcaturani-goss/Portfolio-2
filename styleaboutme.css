@@ -315,7 +315,7 @@ input {
     display: none;
   }
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 992px) {
   /*Top Navigation*/
   .topnav {
     display: none;
@@ -374,7 +374,6 @@ input {
     margin: 5em 10em 5em 10em;
   }
   h1 {
-    font-family: "Nunito Sans", sans-serif;
     margin-left: 13.875em;
   }
   p {
@@ -392,7 +391,6 @@ input {
     color: #dd6d33;
   }
   .emaillink {
-    font-family: "Nunito Sans", sans-serif;
     margin-left: 33.875em;
     font-size: 1.0625rem;
   }
@@ -406,5 +404,100 @@ input {
   .sci {
     height: 0.625em;
     margin-left: 31.25em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /*Top Navigation*/
+  .topnav {
+    display: none;
+  }
+  .largescreentopnav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    height: 11em;
+    width: 100%;
+    padding: 0 0em;
+  }
+  .largescreenlogo {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 9.5em 0em 3em;
+    margin: 0em 0em 0em 0em;
+  }
+  .menulinks {
+    background-color: violet !important;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-left: 78.625em;
+    margin-top: 3.2em;
+    width: 0em;
+    height: 0em;
+  }
+  .menulinks a {
+    color: #6c8fad;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0em 0em 0em 3em;
+    padding: 0em 0.5em 0em 0em;
+    line-height: 0rem;
+  }
+  .menulinks a:hover {
+    color: #dd6d33;
+  }
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  /* End of Top Navigation */
+
+  .logoimg {
+    margin-top: 1.6875em;
+  }
+  .aboutmeimg {
+    margin: 0em 0em 0em 24em;
+  }
+  .aboutmetext {
+    margin: 5em 20em 5em 20em;
+  }
+  h1 {
+    margin-left: 16.625em;
+  }
+  p {
+    line-height: 1.5rem;
+    margin: 0em 3em 0em 8em;
+  }
+  footer {
+    position: relative;
+    height: 60em;
+  }
+  .footerlogo {
+    padding-top: 9.5em;
+    margin-left: 54.1875em;
+  }
+  .footernavlinks a:hover {
+    color: #dd6d33;
+  }
+  .emailtitle {
+    margin-right: 5em;
+  }
+  .emaillink {
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 50em;
+    font-size: 1.0625rem;
+  }
+  .emaillink a:hover {
+    color: blue;
+  }
+  .sci {
+    height: 0.625em;
+    margin-left: 48.5625em;
+  }
+  .copyright {
+    margin-top: 7em;
   }
 }

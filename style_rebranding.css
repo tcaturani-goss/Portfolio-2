@@ -539,7 +539,7 @@ input {
   }
   h1 {
     font-size: 4.25rem;
-    margin-left: 23.75em;
+    margin-left: 5em;
   }
   h2 {
     font-size: 3rem;
@@ -549,15 +549,15 @@ input {
   h3 {
     font-size: 2rem;
     margin-top: 3em;
-    margin-left: 12.5em;
+    margin-left: 6.125em;
   }
 
   h4 {
-    margin: 1.25em 0em 0.5em 12.5em;
+    margin: 1.25em 0em 0.5em 11em;
   }
 
   h5 {
-    margin: 0em 0em 0em 12.5em;
+    margin: 0em 0em 0em 14em;
   }
 
   p {
@@ -660,5 +660,189 @@ input {
   }
   .copyright {
     margin-top: 6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /*Top Navigation*/
+  .topnav {
+    display: none;
+  }
+  .largescreentopnav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    height: 11em;
+    width: 100%;
+    padding: 0 0em;
+  }
+  .largescreenlogo {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 9.5em 0em 3em;
+    margin: 0em 0em 0em 0em;
+  }
+  .menulinks {
+    background-color: violet !important;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-left: 78.625em;
+    margin-top: 3.2em;
+    width: 0em;
+    height: 0em;
+  }
+  .menulinks a {
+    color: #6c8fad;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0em 0em 0em 3em;
+    padding: 0em 0.5em 0em 0em;
+    line-height: 0rem;
+  }
+  .menulinks a:hover {
+    color: #dd6d33;
+  }
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  /* End of Top Navigation */
+
+  .logoimg {
+    margin-top: 1.6875em;
+  }
+  h1 {
+    font-size: 4.25rem;
+    margin-left: 9em;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-top: 3em;
+    margin-right: 2em;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-top: 3em;
+    margin-left: 6.125em;
+  }
+
+  h4 {
+    margin: 1.25em 0em 0.5em 11em;
+  }
+
+  h5 {
+    margin: 0em 0em 0em 14em;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-left: 12.5em;
+    margin-right: 12.5em;
+  }
+
+  ul {
+    margin-left: 12.5em;
+    margin-right: 12.5em;
+  }
+  .rebrandimg {
+    margin: 20px 0px 0px 130px;
+    width: 1100px;
+    height: 500px;
+  }
+
+  .personaimgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dadpersona {
+    margin: 30px 0px 0px 200px;
+    width: 930px;
+    height: 258px;
+  }
+
+  .millennialpersona {
+    margin: 25px 0px 0px 200px;
+    width: 930px;
+    height: 258px;
+  }
+
+  .seniorpersona {
+    margin: 25px 0px 0px 200px;
+    width: 930px;
+    height: 258px;
+  }
+
+  .beekeepers {
+    margin: 0px 0px 0px 200px;
+    width: 290px;
+    height: 594px;
+  }
+
+  .nakedharvest {
+    margin: 30px 0px 0px 25px;
+    width: 290px;
+    height: 594px;
+  }
+
+  .newchapter {
+    margin: 30px 0px 0px 25px;
+    width: 290px;
+    height: 594px;
+  }
+
+  .moodboard {
+    width: 650px;
+    height: 653px;
+    margin: 20px 0px 0px 350px;
+  }
+  .logoboard {
+    width: 1300px;
+    height: 693px;
+    margin-left: 15em;
+  }
+  .logoboard2 {
+    width: 928px;
+    height: 495px;
+    margin: 0px 0px 150px 200px;
+  }
+
+  .leavesmockupimg {
+    width: 928px;
+    height: 651px;
+    margin: 0px 0px 100px 200px;
+  }
+  footer {
+    position: relative;
+    height: 60em;
+  }
+  .footerlogo {
+    padding-top: 9.5em;
+    margin-left: 54.1875em;
+  }
+  .footernavlinks a:hover {
+    color: #dd6d33;
+  }
+  .emailtitle {
+    margin-left: 1em;
+  }
+  .emaillink {
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 50em;
+    font-size: 1.0625rem;
+  }
+  .emaillink a:hover {
+    color: blue;
+  }
+  .sci {
+    height: 0.625em;
+    margin-left: 48.5625em;
+  }
+  .copyright {
+    margin-top: 7em;
   }
 }
